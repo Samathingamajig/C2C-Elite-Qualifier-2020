@@ -1,0 +1,6 @@
+My name is {name}
+They call me {name}
+I'm {name}
+My name's {name}
+I'm called {name}
+My maker named me {name}

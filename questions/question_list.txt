@@ -1,0 +1,6 @@
+name
+age
+number_of_siblings
+youngest_or_oldest
+number_of_pets
+pet_names
