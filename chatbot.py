@@ -51,7 +51,7 @@ class Chatbot:
   
   def require_from_list(self, prompt, key_to_modify_as_string, *options):
     self.send(prompt)
-    regex = r"|".join(list(map(lambda s: s.lower(), options)))
+    regex = r"|".join(list(map(lambda s: re.escape(s.lower()), options)))
     while not (response_has_valid_option := False):
       response = input().lower()
       answer = re.search(regex, response)
