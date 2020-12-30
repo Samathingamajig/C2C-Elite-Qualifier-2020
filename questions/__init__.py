@@ -4,4 +4,5 @@ from .name import name
 from .number_of_pets import number_of_pets
 from .number_of_siblings import number_of_siblings
 from .pet_names import pet_names
+from .pet_types import pet_types
 from .youngest_or_oldest import youngest_or_oldest
