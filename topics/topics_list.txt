@@ -3,7 +3,6 @@ Apples (the fruit)
 Boxes
 Candy
 Card Games
-Chrome
 Computer Science
 Dogs
 Minecraft

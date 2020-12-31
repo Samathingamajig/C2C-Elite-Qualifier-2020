@@ -4,7 +4,6 @@ from .apple_the_company import apple_the_company
 from .boxes import boxes
 from .candy import candy
 from .card_games import card_games
-from .chrome import chrome
 from .computer_science import computer_science
 from .dogs import dogs
 from .minecraft import minecraft
@@ -15,3 +14,5 @@ from .sodas import sodas
 from .tv_shows import tv_shows
 from .vs_code import vs_code
 from .youtube import youtube
+
+topics_list = ['Apple (the company)', 'Apples (the fruit)', 'Boxes', 'Candy', 'Card Games', 'Computer Science', 'Dogs', 'Minecraft', 'Pokemon', 'Shirts', 'Skittles', 'Sodas', 'TV Shows', 'VS Code', 'YouTube']

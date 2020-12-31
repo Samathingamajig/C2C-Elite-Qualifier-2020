@@ -14,3 +14,9 @@ if __name__ == "__main__":
         while "\\" in filename or "/" in filename: # Remove the slashes from the file name (Need to do both types of slashes because I'm developting this on Windows but this will run on a Linux machine)
           filename = filename[(filename.index("\\") or filename.index("/")) + 1:]
         init_file.write(f"from .{filename} import {filename}\n")
+    
+    init_file.write("\n")
+    with open("topics/topics_list.txt", "r") as topics_list_file:
+      topics_list = topics_list_file.read().splitlines()
+      topics_list = list(filter(lambda topic: topic.strip() != "", topics_list))
+      init_file.write(f"""topics_list = ['{"', '".join(topics_list)}']""")
