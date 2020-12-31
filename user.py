@@ -6,6 +6,7 @@ class User:
     self.number_of_siblings = None
     self.number_of_pets = None
     self.pet_names = None
+    self.pet_types = None
     self.interests = None
   
   def json(self):

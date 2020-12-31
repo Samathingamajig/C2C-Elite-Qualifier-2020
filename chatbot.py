@@ -24,26 +24,35 @@ class Chatbot:
     topics = import_module("topics")
   
   def start(self):
-    questions.name(self)
-    questions.age(self)
-    questions.number_of_siblings(self)
+    # questions.name(self)
+    # questions.age(self)
+    # questions.number_of_siblings(self)
     questions.number_of_pets(self)
 
     while len(topics.topics_list) > 0:
+      self.send()
       self.send(f"What do you want to talk about? Your available options are:")
       print3(topics.topics_list)
       topic = self.require_from_list(None, None, *topics.topics_list, error="Please enter a valid topic from the list above.")
       topics.topics_list = list(filter(lambda t: t.lower() != topic, topics.topics_list))
+      topic = re.sub(r"\W+", "_", topic).strip("_")
       getattr(topics, topic)(self)
 
   
   def random_phrases(self, *phrases):
+    return self._random_from_path("phrases", *phrases)
+  
+  def random_topics_list(self, *filenames):
+    return self._random_from_path("topics_random", *filenames)
+
+  def _random_from_path(self, base_path, *filenames):
     random_list = []
-    for phrase in phrases:
-      with open(f"{os.path.join('phrases', phrase)}.txt", "r") as file:
+    for filename in filenames:
+      with open(f"{os.path.join(base_path, filename)}.txt", "r") as file:
         options = file.read().splitlines() # file.readlines() keeps the '\n' character
+        options = list(filter(lambda option: not option.startswith("#") and option.strip() != "", options))
         random_list.append(random.choice(options))
-      if len(phrases) == 1:
+      if len(filenames) == 1:
         return random_list[0]
     return random_list
   
@@ -95,3 +104,16 @@ class Chatbot:
           setattr(self.user, key_to_modify_as_string, response if not save_as_list else [response])
         return response if not save_as_list else [response]
       self.send("Please return a word/phrase that isn't just whitespace/blank")
+  
+  def require_boolean(self, prompt, key_to_modify_as_string):
+    if prompt: self.send(prompt)
+    while not (response_is_boolean := False):
+      response = input().strip().lower()
+      match = re.search(r"yes|no", response)
+      if match is not None:
+        if match.group() == "yes": result = True
+        else: result = False
+        if key_to_modify_as_string is not None and key_to_modify_as_string != "":
+          setattr(self.user, key_to_modify_as_string, result)
+        return result
+      self.send("Please respond with a yes or a no.")
