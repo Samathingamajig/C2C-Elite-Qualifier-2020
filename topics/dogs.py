@@ -3,7 +3,7 @@ import re
 
 def dogs(chatbot: Chatbot):
   like_dogs = chatbot.require_boolean("Do you like dogs?", None)
-  number_of_dogs = len(list(filter(lambda pet_type: re.search(r"dog", pet_type) is not None, chatbot.user.pet_types)))
+  number_of_dogs = len(list(filter(lambda pet_type: re.search(r"dog", pet_type) is not None, chatbot.user.pet_types))) if chatbot.user.number_of_pets != 0 else 0
   if number_of_dogs == 1: index_of_dog = [i for i, pet_type in enumerate(chatbot.user.pet_types) if re.search(f"dog", pet_type)][0]
   if like_dogs:
     if number_of_dogs == 0:
@@ -35,5 +35,6 @@ def dogs(chatbot: Chatbot):
     else:
       chatbot.send("I guess that's expected if you don't have any dogs.")
   
-  chatbot.require_string("What's your favorite dog breed?", None)
-  chatbot.send(f"My favorite dog breed is the {chatbot.random_topics_list('dog_breeds')}.")
+  if like_dogs:
+    chatbot.require_string("What's your favorite dog breed?", None)
+    chatbot.send(f"My favorite dog breed is the {chatbot.random_topics_list('dog_breeds')}.")

@@ -1,0 +1,135 @@
+# List of apple types taken from https://en.wikipedia.org/wiki/List_of_apple_cultivars
+Adams Pearmain
+Aia Ilu
+Airlie Red Flesh
+Akane
+Alkmene
+Allington Pippin
+Ambrosia
+Anna
+Annurca
+Ariane
+Arkansas Black
+Aurora Golden Gala
+Autumn Bough
+Autumn Glory
+Baldwin
+Beacon
+Beauty of Bath
+Belle de Boskoop
+Bellflower
+Ben Davis
+Birgit Bonnier
+Braeburn
+Brina
+Cameo
+Champion
+Claygate Pearmain
+Clivia
+Cornish Aromatic
+Cornish Gilliflower
+Cortland
+Cosmic Crisp
+Court Pendu Plat
+Crimson Gold
+Cripps Red
+Delbarestivale
+Delrouval
+Discovery
+Dorsett Golden
+Dougherty
+Duchess of Oldenburg
+Egremont Russet
+Elstar
+Empire
+Enterprise
+Envy
+Esopus Spitzenburg
+Eva
+EverCrisp
+Fiesta
+Filippa
+Flamenco
+Florina
+Fuji
+Gala
+Ginger Gold
+Golden Delicious
+Golden Orange
+Goldspur
+Granny Smith
+Gravenstein
+Grimes Golden
+Haralson
+Honeycrisp
+Honeygold
+Idared
+Ingrid Marie
+James Grieve
+Jazz
+Jersey Black
+Jonadel
+Jonagold
+Jonathan
+Jubilee
+Julieta
+Jupiter
+Kanzi
+Karmijn de Sonnaville
+King of the Pippins
+Knobby Russet
+Lady Alice
+Liberty
+Liveland Raspberry
+Lodi
+Lord Lambourne
+Macoun
+McIntosh
+Melba
+Melrose
+Mutsu
+Newtown Pippin
+Nicola
+Opal
+Papirovka
+Paula Red
+Pink Pearl
+Pinova
+Prima
+Pristine
+Rajka
+Ralls Janet
+Rambo
+Red Astrachan
+Red Delicious
+Red Pineapple
+Redlove apples
+Rhode Island Greening
+Ribston Pippin
+Rome
+Roxbury Russet
+Sandow
+Sansa
+Sekai Ichi
+Spartan
+Splendour
+Star of Devon
+Stayman
+Sturmer Pippin
+Summerfree
+Sundowner
+Sunset
+Suntan
+SweeTango
+Taliaferro
+Tartu Rose
+Tentation
+Tompkins King
+Topaz
+Wealthy
+Winesap
+Winston
+Worcester Pearmain
+Wyken Pippin
+York Imperial
+Zestar
