@@ -16,7 +16,7 @@ def minecraft(chatbot: Chatbot):
       else: chatbot.send("You must be from the future?")
 
       chatbot.require_from_list("What console (PC/Mobile/XBox/PlayStation/Wii U/Windows 10) did you first own Minecraft for?", None, "PC", "Mobile", "XBox", "PlayStation", "Wii U", "Windows 10")
-      chatbot.require_string(f"What's your favorite block? Mine's {chatbot.random_topics_list('minecraft_blocks')}.")
+      chatbot.require_string(f"What's your favorite block? Mine's {chatbot.random_topics_list('minecraft_blocks')}.", None)
 
     else:
       chatbot.send("Oh no. Hopefully you'll be gifted a copy or buy one soon!")
