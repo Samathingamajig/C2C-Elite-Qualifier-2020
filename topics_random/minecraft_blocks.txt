@@ -1,0 +1,412 @@
+# This list was taken from https://mcreator.net/wiki/minecraft-block-and-item-list-registry-and-code-names
+Air
+Any Stone
+Stone
+Granite
+Polished Granite
+Diorite
+Polished Diorite
+Andesite
+Polished Andesite
+Grass
+Grass Path
+Mycelium
+Any Dirt
+Dirt
+Coarse Dirt
+Podzol
+Cobblestone
+Mossy Cobblestone
+Any Planks
+Oak Planks
+Spruce Planks
+Birch Planks
+Jungle Planks
+Acacia Planks
+Dark Oak Planks
+Sugar Cane
+Bedrock
+Any Sand
+Sand
+Red Sand
+Gravel
+Water
+Water Still
+Lava
+Lava Still
+Magma Block
+Obsidian
+Coal Ore
+Iron Ore
+Redstone Ore
+Redstone Ore Lit
+Gold Ore
+Lapis Lazuli Ore
+Diamond Ore
+Emerald Ore
+Nether Quartz Ore
+Coal Block
+Iron Block
+Redstone Block
+Gold Block
+Lapis Lazuli Block
+Diamond Block
+Emerald Block
+Any Block of Quartz
+Block of Quartz
+Chiseled Quartz Block
+Pillar Quartz Block
+Slime Block
+Oak/Spruce/Birch/Jungle Wood
+Oak Wood
+Spruce Wood
+Birch Wood
+Jungle Wood
+Acacia/Dark Oak Wood
+Acacia Wood
+Dark Oak Wood
+Oak/Spruce/Birch/Jungle Leaves
+Oak Leaves
+Spruce Leaves
+Birch Leaves
+Jungle Leaves
+Acacia/Dark Leaves
+Acacia Leaves
+Dark Oak Leaves
+Any Sponge
+Sponge
+Wet Sponge
+Any Sandstone
+Sandstone
+Chiseled sandstone
+Smooth sandstone
+Any Red Sandstone
+Red Sandstone
+Chiseled Red Sandstone
+Smooth Red Sandstone
+Note Block
+Rail
+Powered Rail
+Detector Rail
+Activator Rail
+Bed
+Cobweb
+Dead Bush
+Shrub/Tall Grass/Fern
+Shrub
+Tall Grass
+Fern
+Piston
+Sticky Piston
+Piston Head
+Piston Extension
+Dandelion
+Any Flower
+Poppy
+Blue Orchid
+Allium
+Azure Bluet
+Red Tulip
+Orange Tulip
+White Tulip
+Pink Tulip
+Oxeye Daisy
+Any Large Flower
+Sunflower
+Lilac
+Rose Bush
+Peony
+Brown Mushroom
+Red Mushroom
+Brown Mushroom Block
+Red Mushroom Block
+Bricks
+TNT
+Bookshelf
+Torch
+Fire
+Mob Spawner
+Oak Stairs
+Spruce Stairs
+Birch Stairs
+Jungle Stairs
+Acacia Stairs
+Dark Oak Stairs
+Sandstone Stairs
+Red Sandstone Stairs
+Cobblestone Stairs
+Brick Stairs
+Stone Brick Stairs
+Nether Brick Stairs
+Quartz Stairs
+Purpur Stairs
+Chest
+Trapped Chest
+Ender Chest
+Crafting Table
+Wheat
+Farmland
+Furnace
+Furnace Lit
+Sign Standing
+Sign on Wall
+Oak Door
+Spruce Door
+Birch Door
+Jungle Door
+Acacia Door
+Dark Oak Door
+Iron Door
+Trapdoor
+Iron Trapdoor
+Ladder
+Lever
+Stone Button
+Wooden Button
+Wooden Pressure Plate
+Stone Pressure Plate
+Light Weighted Pressure Plate
+Heavy Weighted Pressure Plate
+Tripwire Hook
+Tripwire
+Daylight Sensor
+Daylight Sensor Inverted
+Redstone Torch
+Redstone Torch (inactive)
+Redstone
+Redstone Repeater Block (Unpowered)
+Redstone Repeater Block (Powered)
+Redstone Comparator Block (Unpowered)
+Redstone Comparator Block (Powered)
+Redstone Lamp
+Redstone Lamp Lit
+Dispenser
+Dropper
+Observer
+Hopper
+Command Block
+Snow
+Snow
+Ice
+Packed Ice
+Frosted Ice
+Cactus
+Clay
+Jukebox
+Oak Fence
+Spruce Fence
+Birch Fence
+Jungle Fence
+Acacia Fence
+Dark Oak Fence
+Oak Fence Gate
+Spruce Fence Gate
+Birch Fence Gate
+Jungle Fence Gate
+Acacia Fence Gate
+Dark Oak Fence Gate
+Nether Brick Fence
+Nether Bricks
+Red Nether Bricks
+Netherrack
+Soul Sand
+Glowstone
+Bone Block
+Nether Wart
+Nether Wart Block
+Cake Block
+Any Stone Bricks
+Stone Bricks
+Mossy Stone Bricks
+Cracked Stone Bricks
+Chiseled Stone Bricks
+Iron Bars
+Melon Block
+Melon Stem
+Pumpkin
+Jack o'Lantern
+Pumpkin Stem
+Vines
+Waterlily
+Enchanting Table
+Brewing Stand
+Cauldron
+End Portal Block
+End Portal Frame
+End Gateway
+End Stone
+End Bricks
+End Rod
+Purpur Block
+Purpur Pillar
+Purpur Slab
+Purpur Double Slab
+Beetroot
+Chorus Plant
+Chorus Flower
+Any Wooden Slab
+Oak Slab
+Spruce Slab
+Birch Slab
+Jungle Slab
+Acacia Slab
+Dark Oak Slab
+Stone Slab
+Sandstone Slab
+Petrified Wooden Slab
+Cobblestone Slab
+Bricks Slab
+Stone Brick Slab
+Nether Brick Slab
+Quartz Slab
+Red Sandstone Slab
+Nether Portal Block
+Anvil
+Beacon
+Cobblestone Wall
+Mossy Cobblestone Wall
+Flower Pot
+Any Wool
+White Wool
+Orange Wool
+Magenta Wool
+Light Blue Wool
+Yellow Wool
+Lime Wool
+Pink Wool
+Gray Wool
+Light Gray Wool
+Cyan Wool
+Purple Wool
+Blue Wool
+Brown Wool
+Green Wool
+Red Wool
+Black Wool
+Hardened Clay
+Terracotta
+White Terracotta
+Orange Terracotta
+Magenta Terracotta
+Light Blue Terracotta
+Yellow Terracotta
+Lime Terracotta
+Pink Terracotta
+Gray Terracotta
+Light Gray Terracotta
+Cyan Terracotta
+Purple Terracotta
+Blue Terracotta
+Brown Terracotta
+Green Terracotta
+Red Terracotta
+Black Terracotta
+White Glazed Terracotta
+Orange Glazed Terracotta
+Magenta Glazed Terracotta
+Light Blue Glazed Terracotta
+Yellow Glazed Terracotta
+Lime Glazed Terracotta
+Pink Glazed Terracotta
+Gray Glazed Terracotta
+Silver Glazed Terracotta
+Cyan Glazed Terracotta
+Purple Glazed Terracotta
+Blue Glazed Terracotta
+Brown Glazed Terracotta
+Green Glazed Terracotta
+Red Glazed Terracotta
+Black Glazed Terracotta
+Any Concrete Powder
+White Concrete Powder
+Orange Concrete Powder
+Magenta Concrete Powder
+Light Blue Concrete Powder
+Yellow Concrete Powder
+Lime Concrete Powder
+Pink Concrete Powder
+Gray Concrete Powder
+Light Gray Concrete Powder
+Cyan Concrete Powder
+Purple Concrete Powder
+Blue Concrete Powder
+Brown Concrete Powder
+Green Concrete Powder
+Red Concrete Powder
+Black Concrete Powder
+Any Concrete
+White Concrete
+Orange Concrete
+Magenta Concrete
+Light Blue Concrete
+Yellow Concrete
+Lime Concrete
+Pink Concrete
+Gray Concrete
+Light Gray Concrete
+Cyan Concrete
+Purple Concrete
+Blue Concrete
+Brown Concrete
+Green Concrete
+Red Concrete
+Black Concrete
+Any Carpet
+White Carpet
+Orange Carpet
+Magenta Carpet
+Light Blue Carpet
+Yellow Carpet
+Lime Carpet
+Pink Carpet
+Gray Carpet
+Light Gray Carpet
+Cyan Carpet
+Purple Carpet
+Blue Carpet
+Brown Carpet
+Green Carpet
+Red Carpet
+Black Carpet
+Glass
+Any Stained Glass
+White Stained Glass
+Orange Stained Glass
+Magenta Stained Glass
+Light Blue Stained Glass
+Yellow Stained Glass
+Lime Stained Glass
+Pink Stained Glass
+Gray Stained Glass
+Light Gray Stained Glass
+Cyan Stained Glass
+Purple Stained Glass
+Blue Stained Glass
+Brown Stained Glass
+Green Stained Glass
+Red Stained Glass
+Black Stained Glass
+Glass Pane
+Any Stained Glass Pane
+White Stained Glass Pane
+Orange Stained Glass Pane
+Magenta Stained Glass Pane
+Light Blue Stained Glass Pane
+Yellow Stained Glass Pane
+Lime Stained Glass Pane
+Pink Stained Glass Pane
+Gray Stained Glass Pane
+Light Gray Stained Glass Pane
+Cyan Stained Glass Pane
+Purple Stained Glass Pane
+Blue Stained Glass Pane
+Brown Stained Glass Pane
+Green Stained Glass Pane
+Red Stained Glass Pane
+Black Stained Glass Pane
+Sea Lantern
+Prismarine
+Prismarine Bricks
+Dark Prismarine
+Banner Wall
+Barrier
