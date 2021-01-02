@@ -24,9 +24,9 @@ class Chatbot:
     topics = import_module("topics")
   
   def start(self):
-    # questions.name(self)
-    # questions.age(self)
-    # questions.number_of_siblings(self)
+    questions.name(self)
+    questions.age(self)
+    questions.number_of_siblings(self)
     questions.number_of_pets(self)
 
     while len(topics.topics_list) > 0:
