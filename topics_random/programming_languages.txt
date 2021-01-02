@@ -1,0 +1,14 @@
+# I made this list myself from the languages I know
+JavaScript
+TypeScript
+Java
+Python
+C
+C++
+C#
+Go
+Rust
+Dart
+Ruby
+PHP
+Kotlin
