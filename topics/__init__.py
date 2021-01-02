@@ -6,7 +6,6 @@ from .computer_science import computer_science
 from .dogs import dogs
 from .minecraft import minecraft
 from .pokemon import pokemon
-from .skittles import skittles
 from .sodas import sodas
 
-topics_list = ['Apples (the fruit)', 'Candy', 'Card Games', 'Computer Science', 'Dogs', 'Minecraft', 'Pokemon', 'Skittles', 'Sodas']
+topics_list = ['Apples (the fruit)', 'Candy', 'Card Games', 'Computer Science', 'Dogs', 'Minecraft', 'Pokemon', 'Sodas']
