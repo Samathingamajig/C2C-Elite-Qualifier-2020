@@ -1,7 +1,9 @@
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg) ![Language: Python](https://img.shields.io/badge/Language-Python-green.svg) ![Author: Samathingamajig](https://img.shields.io/badge/Author-Samathingamajig-orange.svg)
+
 # C2C Elite Qualifier 2020/2021
 
-By: Samathingamajig
-Topic: Chatbot in Python
+By: Samathingamajig  
+Topic: Chatbot in Python  
 For: To qualify for the Code2College 2020-2021 Elite program
 
 ## Technologies used:
@@ -25,8 +27,8 @@ For: To qualify for the Code2College 2020-2021 Elite program
 
 1. Download this repository locally
 2. Make sure Python 3.9.1 or above is installed
-3. Run the file `main.py` with the command:
-   Windows: `py -3 main.py`
+3. Run the file `main.py` with the command:  
+   Windows: `py -3 main.py`  
    Linux: `python3 main.py`
 
 #### Through [repl.it](https://repl.it):
