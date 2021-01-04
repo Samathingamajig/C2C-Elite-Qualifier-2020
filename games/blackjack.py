@@ -109,7 +109,7 @@ def blackjack():
     scores_less_than_17 = [score for score in comp_scores if score < 17]
     has_17_through_21 = len(scores_17_through_21) > 0
     has_less_than_17 = len(scores_less_than_17) > 0
-    if human_final_score >= 21 or human_5_cards or human_final_score < max([*scores_17_through_21, *scores_less_than_17]):
+    if human_final_score >= 21 or human_5_cards or ((has_17_through_21 or has_less_than_17) and human_final_score < max([*scores_17_through_21, *scores_less_than_17])):
       comp_final_score = max([*scores_17_through_21, *scores_less_than_17])
       break
     elif has_17_through_21:
