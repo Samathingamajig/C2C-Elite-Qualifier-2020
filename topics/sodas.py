@@ -17,4 +17,4 @@ def sodas(chatbot: Chatbot):
         chatbot.require_string("What is your favorite soda then?", None)
     else:
       chatbot.require_string("What is your favorite soda?", None)
-    chatbot.send(f"My favorite soda is {chatbot.random_topics_list('sodas')}")
+    chatbot.send(f"My favorite soda is {chatbot.random_topics_list('sodas')}.")

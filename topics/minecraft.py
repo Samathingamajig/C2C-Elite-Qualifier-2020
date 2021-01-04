@@ -9,7 +9,7 @@ def minecraft(chatbot: Chatbot):
     own_game = chatbot.require_boolean("Do you own any copy of Minecraft?", None)
     if own_game:
       year_gotten = chatbot.require_number("What year did you buy (or get gifted) Minecraft (for the first time)?", None)
-      if year_gotten < 2009: chatbot.send("Wow, you got the game before Notch started development. GG")
+      if year_gotten < 2009: chatbot.send("Wow, you got the game before Notch started development. GG!")
       elif year_gotten == 2009: chatbot.send("That's amazing that you got the game within the first year!")
       elif year_gotten < 2015: chatbot.send("Hello, veteran.")
       elif year_gotten <= 2021: chatbot.send("It's such a great game, good job!")

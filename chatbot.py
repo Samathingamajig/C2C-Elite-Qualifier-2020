@@ -122,7 +122,7 @@ class Chatbot:
         if key_to_modify_as_string is not None and key_to_modify_as_string != "":
           setattr(self.user, key_to_modify_as_string, response if not save_as_list else [response])
         return response if not save_as_list else [response]
-      self.send("Please return a word/phrase that isn't just whitespace/blank")
+      self.send("Please return a word/phrase that isn't just whitespace/blank.")
   
   def require_boolean(self, prompt, key_to_modify_as_string):
     if prompt: self.send(prompt)

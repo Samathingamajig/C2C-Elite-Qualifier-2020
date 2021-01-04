@@ -8,7 +8,7 @@ def age(chatbot: Chatbot):
   if chatbot.user.age == 0:
     chatbot.send("That's a very interesting age...")
   elif chatbot.user.age < 13:
-    chatbot.send("You're kinda young to be using this chatbot, and even the internet in general")
+    chatbot.send("You're kinda young to be using this chatbot, and even the internet in general.")
   elif chatbot.user.age == 15:
     chatbot.send("Hey, you're the same age as my creator!")
   elif chatbot.user.age < 20:
