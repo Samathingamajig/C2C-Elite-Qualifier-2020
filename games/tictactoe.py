@@ -45,7 +45,9 @@ def num_to_row_and_column(num):
   return row, column
 
 def print_board(board):
+  print()
   print((f"\n{'-'*11}\n").join(["|".join([f" {char} " for char in row]) for row in board]))
+  print()
 
 def is_valid_space(board, num):
   row, column = num_to_row_and_column(num)

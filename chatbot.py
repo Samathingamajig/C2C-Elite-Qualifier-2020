@@ -5,6 +5,7 @@ from time import sleep
 from importlib import import_module
 import re
 import math
+import games
 
 questions = None
 topics = None
@@ -34,12 +35,25 @@ class Chatbot:
       self.send(f"What do you want to talk about? Your available options are:")
       print3(topics.topics_list)
       self.send("You can also say \"Stop talking\" to continue on.")
-      topic = self.require_from_list(None, None, *topics.topics_list, error="Please enter a valid topic from the list above.", stop_talking=True)
-      if topic == "stop_talking":
+      topic = self.require_from_list(None, None, *topics.topics_list, error="Please enter a valid topic from the list above.", stop="talking")
+      if topic == "stop":
         break
       topics.topics_list = list(filter(lambda t: t.lower() != topic, topics.topics_list))
       topic = re.sub(r"\W+", "_", topic).strip("_")
       getattr(topics, topic)(self)
+    
+    self.send("\nIt's been great talking to you!")
+    want_to_play_games = self.require_boolean("Do you want to play any games? (\"no\" will exit the program)", None)
+    while want_to_play_games:
+      self.send()
+      self.send("What game do you want to play? Your available options are:")
+      print3(games.games_list)
+      self.send("(You can also say \"Stop gaming\" to exit)")
+      game = self.require_from_list(None, None, *games.games_list, error="Please enter a valid game from the list above.", stop="gaming").lower()
+      if game == "stop":
+        break
+      getattr(games, game)()
+    self.send("Alright, goodbye forever!")
 
   
   def random_phrases(self, *phrases):
@@ -74,7 +88,7 @@ class Chatbot:
         return int(number.group())
       self.send("Please answer with digits (0-9)")
   
-  def require_from_list(self, prompt, key_to_modify_as_string, *options, error=None, stop_talking=False):
+  def require_from_list(self, prompt, key_to_modify_as_string, *options, error=None, stop=False):
     if prompt: self.send(prompt)
     regex = r"|".join(list(map(lambda s: re.escape(s.lower()), options)))
     while not (response_has_valid_option := False):
@@ -84,8 +98,8 @@ class Chatbot:
         if key_to_modify_as_string is not None and key_to_modify_as_string != "":
           setattr(self.user, key_to_modify_as_string, answer.group())
         return answer.group()
-      if stop_talking and re.search(r"stop\s*talking", response) is not None:
-        return "stop_talking"
+      if stop is not False and re.search(r"stop\s*"+stop, response) is not None:
+        return "stop"
       self.send(error or f"Please one of the following strings in your response: {', '.join(options)}")
   
   def require_list_of_size(self, prompt, key_to_modify_as_string, list_size):
