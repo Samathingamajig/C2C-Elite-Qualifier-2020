@@ -136,9 +136,9 @@ def blackjack():
   print(f"You:\t{human_final_score}")
   print(f"Me:\t{comp_final_score}")
   print()
-  if (human_final_score > comp_final_score or comp_final_score > 21) and human_final_score <= 21:
+  if human_5_cards or ((human_final_score > comp_final_score or comp_final_score > 21) and human_final_score <= 21 and not comp_5_cards):
     print("You win! Congratulations!")
-  elif (comp_final_score > human_final_score or human_final_score > 21) and comp_final_score <= 21:
+  elif comp_5_cards or ((comp_final_score > human_final_score or human_final_score > 21) and comp_final_score <= 21):
     print("I win! Good game!")
   else:
     print("We tied! Good game.") 
