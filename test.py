@@ -6,13 +6,13 @@ from contextlib import contextmanager
 
 @contextmanager
 def stdin_changer(input_file):
+  old_stdin = sys.stdin
   try:
-    sys.stdin.close()
     sys.stdin = open(f"tests/{input_file}", "r")
     yield
   finally:
     sys.stdin.close()
-    sys.stdin = open("/dev/tty", "r")
+    sys.stdin = old_stdin
 
 class TestRequireBoolean(unittest.TestCase):
   def test_yes(self):
@@ -39,4 +39,4 @@ class TestRequireBoolean(unittest.TestCase):
 
 if __name__ == "__main__":
   unittest.main()
-  sys.stdin.close()
+
